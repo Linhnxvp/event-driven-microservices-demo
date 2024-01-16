@@ -1,6 +1,11 @@
 spring:
   kafka:
     bootstrap-servers: localhost:9092
+    streams:
+      bootstrap-servers: localhost:9092
+      application-id: comment-streams
+      default-key-serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+      default-value-serde: org.apache.kafka.common.serialization.Serdes$StringSerde
     admin:
       properties:
         bootstrap-servers: localhost:9092
