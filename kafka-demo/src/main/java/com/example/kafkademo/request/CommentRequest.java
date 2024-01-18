@@ -12,9 +12,9 @@ import java.io.Serializable;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ParentCommentRequest implements Serializable{
-    @JsonProperty("id")
-    private String id;
+public class CommentRequest{
+    @JsonProperty("author")
+    private String author;
     @JsonProperty("content")
     private String content;
 }
